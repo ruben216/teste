@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <table>
+            <thead>
+                <tbody>
+                <tr>
+                    <td>
+                        Nome
+                    </td>
+                    <td>
+                        Senha
+                    </td>
+                </tr>
+                <%= console.log('dentro da tabela :) '); %>
+            <% for(var i=0; i<=lista.lenght ;i++){ %>
+                <%= console.log('dentro da tabela :) 2'); %>
+                <tr>
+                    <td><%= lista[i].usuario %></td>
+                    <td><%= lista[i].senha %></td>
+                   
+                    <%= console.log(lista[i].senha); %>
+                </tr>
+
+            <%}%>
+        </tbody>
+            </thead>
+        </table>
+        <%= console.log(lista); %>
+    </body>
+</html>
