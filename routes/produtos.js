@@ -15,6 +15,8 @@ module.exports = function(app) {
 
             connection.query('select * from usuario', 
             function(err,result,fields){
+                if(err) console.log(err);
+                
                 res.render("../views/produtos/lista",{lista:result});
                 
         });        

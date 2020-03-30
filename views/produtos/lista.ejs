@@ -11,17 +11,14 @@
                         Senha
                     </td>
                 </tr>
-                <%= console.log('dentro da tabela :) '); %>
-            <% for(var i=0; i<=lista.lenght ;i++){ %>
-                <%= console.log('dentro da tabela :) 2'); %>
-                <tr>
-                    <td><%= lista[i].usuario %></td>
-                    <td><%= lista[i].senha %></td>
-                   
-                    <%= console.log(lista[i].senha); %>
-                </tr>
-
-            <%}%>
+                <%= console.log('dentro da tabela no html :) '); %>
+                <%= console.log(lista.lenght); %>
+                <%for(let user of lista){%>
+                    <tr>
+                        <td><%= user.usuario %></td>
+                        <td><%= user.senha%></td>
+                    </tr>
+                <%}%>
         </tbody>
             </thead>
         </table>
